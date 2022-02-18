@@ -21,7 +21,7 @@ class _Pagina1State extends State<Pagina1> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             const SizedBox(
-              height: 85,
+              height: 65,
             ),
             ElevatedButton(
               style: elevatedEstilo,
