@@ -1,6 +1,6 @@
-import 'package:base_app/constants.dart';
+import 'package:base_app/services/constants.dart';
 import 'package:base_app/menu.dart';
-import 'package:base_app/rotas.dart';
+import 'package:base_app/services/rotas.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:get_storage/get_storage.dart';

@@ -1,5 +1,5 @@
 import 'package:base_app/menu.dart';
-import 'package:base_app/pagina1.dart';
+import 'package:base_app/paginas/pagina1.dart';
 import 'package:get/get.dart';
 
 rotas() {
