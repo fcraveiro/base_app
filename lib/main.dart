@@ -5,12 +5,10 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import 'services/tema.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  GoogleFonts();
   await GetStorage.init();
 //  initializeDateFormatting().then((_) => runApp(const MyApp()));
   runApp(const MyApp());
@@ -41,6 +39,16 @@ class MyApp extends StatelessWidget {
             letterSpacing: .2,
           ),
         ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            elevation: 7,
+            fixedSize: const Size(270, 35),
+            primary: const Color(0xFF48426D),
+            onPrimary: const Color.fromARGB(255, 255, 255, 255),
+            onSurface: Colors.black,
+            padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+          ),
+        ),
         canvasColor: secondaryColor,
       ),
       darkTheme: ThemeData.dark().copyWith(
@@ -59,6 +67,16 @@ class MyApp extends StatelessWidget {
           titleTextStyle: GoogleFonts.poppins(
             fontSize: 20,
             letterSpacing: .2,
+          ),
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            elevation: 7,
+            fixedSize: const Size(270, 35),
+            primary: const Color.fromARGB(255, 155, 165, 11),
+            onPrimary: const Color.fromARGB(255, 255, 255, 255),
+            onSurface: Colors.black,
+            padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
           ),
         ),
         canvasColor: secondaryColor,
@@ -90,6 +108,7 @@ class MyApp extends StatelessWidget {
       ),
     );
 */
+
 
 
 

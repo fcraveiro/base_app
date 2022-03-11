@@ -1,4 +1,3 @@
-import 'package:base_app/services/tema.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -24,7 +23,6 @@ class _Pagina1State extends State<Pagina1> {
               height: 65,
             ),
             ElevatedButton(
-              style: elevatedEstilo,
               onPressed: () {
                 Get.back();
               },

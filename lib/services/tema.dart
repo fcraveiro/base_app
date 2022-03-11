@@ -35,12 +35,4 @@ class ThemeService {
 const secondaryColor = Color(0xFF2A2D3E);
 const bgColor = Color(0xFF212332);
 const bgColor2 = Color.fromARGB(255, 206, 190, 190);
-
 const defaultPadding = 16.0;
-
-var elevatedEstilo = ElevatedButton.styleFrom(
-  elevation: 7,
-  fixedSize: const Size(220, 35),
-  primary: const Color(0xFF48426D),
-  onSurface: Colors.black,
-);

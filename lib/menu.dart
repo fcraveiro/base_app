@@ -31,7 +31,7 @@ class _MenuState extends State<Menu> {
               height: 120,
             ),
             ElevatedButton(
-              style: elevatedEstilo,
+//              style: elevatedEstilo,
               onPressed: () {
                 Get.toNamed("/pagina1/");
               },
