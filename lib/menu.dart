@@ -1,6 +1,6 @@
-import 'package:base_app/services/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'services/tema.dart';
 
 class Menu extends StatefulWidget {
   const Menu({Key? key}) : super(key: key);
@@ -15,12 +15,20 @@ class _MenuState extends State<Menu> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Menu Inicial'),
+        actions: [
+          IconButton(
+            onPressed: () => {
+              tema(),
+            },
+            icon: const Icon(Icons.lightbulb),
+          ),
+        ],
       ),
       body: Center(
         child: Column(
           children: [
             const SizedBox(
-              height: 65,
+              height: 120,
             ),
             ElevatedButton(
               style: elevatedEstilo,

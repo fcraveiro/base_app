@@ -1,18 +1,16 @@
-import 'package:google_fonts/google_fonts.dart';
+import 'package:base_app/services/tema.dart';
+
 import '/menu.dart';
 import '/services/rotas.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'services/tema.dart';
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  GoogleFonts();
   await GetStorage.init();
-//  initializeDateFormatting().then((_) => runApp(const MyApp()));
   runApp(const MyApp());
 }
 
@@ -23,27 +21,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Rotas Getx',
-      theme: ThemeData.light().copyWith(
-        scaffoldBackgroundColor: bgColor2,
-        textTheme:
-            GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme).apply(
-          bodyColor: Colors.white,
-          fontSizeFactor: 1.1,
-          displayColor: Colors.yellow,
-          fontSizeDelta: 1.2,
-        ),
-        appBarTheme: AppBarTheme(
-          color: Colors.orange.shade800,
-          elevation: 10,
-          centerTitle: true,
-          titleTextStyle: GoogleFonts.poppins(
-            fontSize: 20,
-            letterSpacing: .2,
-          ),
-        ),
-        canvasColor: secondaryColor,
-      ),
-      darkTheme: ThemeData.dark().copyWith(
+      theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: bgColor,
         textTheme:
             GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme).apply(
@@ -63,7 +41,6 @@ class MyApp extends StatelessWidget {
         ),
         canvasColor: secondaryColor,
       ),
-      themeMode: ThemeService().theme,
       localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
@@ -80,17 +57,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-/*
-  @override
-  Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(
-        statusBarColor: Color(0xFF48426D),
-      ),
-    );
-*/
-
-
-
-
