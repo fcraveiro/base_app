@@ -1,3 +1,4 @@
+//import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '/menu.dart';
 import '/services/rotas.dart';
@@ -18,6 +19,12 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+//    SystemChrome.setSystemUIOverlayStyle(
+//      const SystemUiOverlayStyle(
+//        statusBarColor: Color.fromARGB(255, 21, 17, 47),
+//      ),
+//    );
+
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Rotas Getx',
@@ -73,7 +80,7 @@ class MyApp extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             elevation: 7,
             fixedSize: const Size(270, 35),
-            primary: const Color.fromARGB(255, 155, 165, 11),
+            primary: const Color.fromARGB(255, 68, 78, 100),
             onPrimary: const Color.fromARGB(255, 255, 255, 255),
             onSurface: Colors.black,
             padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
@@ -98,18 +105,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-/*
-  @override
-  Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(
-        statusBarColor: Color(0xFF48426D),
-      ),
-    );
-*/
-
-
-
-
-

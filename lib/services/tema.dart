@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:get/get.dart';
 
-//class ThemeProvider extends ChangeNotifier {
-//  ThemeMode themeMode = ThemeMode.dark;
-//  bool get isDarkMode => themeMode == ThemeMode.dark;
-//  void toogleTheme(bool isOn) {
-//    themeMode = isOn ? ThemeMode.dark : ThemeMode.light;
-//    notifyListeners();
-//  }
-//}
+class ThemeProvider extends ChangeNotifier {
+  ThemeMode themeMode = ThemeMode.dark;
+  bool get isDarkMode => themeMode == ThemeMode.dark;
+  void toogleTheme(bool isOn) {
+    themeMode = isOn ? ThemeMode.dark : ThemeMode.light;
+    notifyListeners();
+  }
+}
 
 tema() {
   // ignore: avoid_print

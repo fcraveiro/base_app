@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'services/tema.dart';
 
@@ -9,6 +10,10 @@ class Menu extends StatefulWidget {
   _MenuState createState() => _MenuState();
 }
 
+const String assetName = 'assets/imagens/menu.svg';
+final Widget svgIcon = SvgPicture.asset(assetName,
+    color: Colors.red, semanticsLabel: 'A red up arrow');
+
 class _MenuState extends State<Menu> {
   @override
   Widget build(BuildContext context) {
@@ -16,6 +21,10 @@ class _MenuState extends State<Menu> {
       appBar: AppBar(
         title: const Text('Menu Inicial'),
         actions: [
+          SvgPicture.asset(
+            assetName,
+            color: Colors.white,
+          ),
           IconButton(
             onPressed: () => {
               tema(),
