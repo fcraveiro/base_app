@@ -23,7 +23,7 @@ class _MenuState extends State<Menu> {
         actions: [
           SvgPicture.asset(
             assetName,
-            color: Colors.white,
+            color: Colors.orange,
           ),
           IconButton(
             onPressed: () => {
