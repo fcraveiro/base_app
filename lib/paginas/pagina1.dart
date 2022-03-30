@@ -34,7 +34,3 @@ class _Pagina1State extends State<Pagina1> {
     );
   }
 }
-
-/*
-teste
-*/
