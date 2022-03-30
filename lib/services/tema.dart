@@ -36,7 +36,3 @@ const secondaryColor = Color(0xFF2A2D3E);
 const bgColor = Color(0xFF212332);
 const bgColor2 = Color.fromARGB(255, 206, 190, 190);
 const defaultPadding = 16.0;
-
-/*
-teste
-/*
