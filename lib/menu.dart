@@ -52,3 +52,16 @@ class _MenuState extends State<Menu> {
     );
   }
 }
+
+teste() {
+  ElevatedButton(
+    style: ElevatedButton.styleFrom(
+      elevation: 7,
+      fixedSize: const Size(220, 35),
+      primary: const Color(0xFF48426D),
+      onSurface: Colors.black,
+    ),
+    onPressed: () {},
+    child: const Text('Pagina 1'),
+  );
+}
